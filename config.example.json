@@ -1,0 +1,21 @@
+{
+  "mode": "shadow",
+  "provider": "openrouter",
+  "ladders": {
+    "claude-code": ["haiku", "sonnet", "opus", "fable"],
+    "codex": [
+      "your-low-cost-model@low",
+      "your-standard-model@medium",
+      "your-strong-model@high",
+      "your-gated-model@high"
+    ]
+  },
+  "gated_tiers": {
+    "claude-code": ["fable"],
+    "codex": ["your-gated-model@high"]
+  },
+  "disabled_tiers": {
+    "claude-code": [],
+    "codex": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "description": "Jev Router Claude Code hook template. Replace /PATH/TO/jev-router before installing.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Agent|Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/PATH/TO/jev-router/adapters/claude-code/spawn.mjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

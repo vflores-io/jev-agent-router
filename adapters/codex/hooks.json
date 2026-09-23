@@ -1,0 +1,18 @@
+{
+  "description": "Jev Router Codex agent-spawn hook. Replace /PATH/TO/jev-router before installing.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "spawn_agent|Agent",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/PATH/TO/jev-router/adapters/codex/spawn.mjs\"",
+            "timeout": 8,
+            "statusMessage": "Routing subagent with Jev"
+          }
+        ]
+      }
+    ]
+  }
+}
